@@ -131,6 +131,7 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
  * @doc https://umijs.org/docs/max/request#配置
  */
 export const request: RequestConfig = {
-  baseURL: 'https://proapi.azurewebsites.net',
+  // baseURL 已移除：原指向 proapi.azurewebsites.net（官方演示后端，已下线）。
+  // 去掉后请求走同源 localhost，由本地 mock 接管。
   ...errorConfig,
 };
